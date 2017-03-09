@@ -8,5 +8,7 @@ VOLUME /usr/share/elasticsearch/config
 VOLUME /data/confd
 VOLUME /opt/rancher/bin
 
+USER 
+
 ENTRYPOINT ["/confd"]
 CMD ["--backend", "rancher", "--prefix", "/2015-07-25"]
