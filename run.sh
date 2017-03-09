@@ -4,7 +4,7 @@ set -e
 
 PLUGIN_TXT=${PLUGIN_TXT:-/usr/share/elasticsearch/plugins.txt}
 
-mkdir /usr/share/elasticsearch/config/scripts
+mkdir -p /usr/share/elasticsearch/config/scripts
 
 while [ ! -f "/usr/share/elasticsearch/config/elasticsearch.yml" ]; do
     sleep 1
